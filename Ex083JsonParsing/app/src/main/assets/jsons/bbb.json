@@ -1,5 +1,0 @@
-[
-  {"name": "sam", "age":  "20", "address": {"nation": "korea","city": "seoul"}},
-  {"name": "robin", "age": "25", "address": {"nation": "france","city": "paris"}},
-  {"name": "hong", "age": "30", "address": {"nation": "japan","city": "tokyo"}}
-]

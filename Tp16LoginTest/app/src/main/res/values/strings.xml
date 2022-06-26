@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Tp16LoginTest</string>
-    <string name="kakao_app_key">9806655c771298c44330edeccb4ea40b</string>
-    <string name="kakao_native_key">9806655c771298c44330edeccb4ea40b</string>
-
-    <string name="naver_client_id">10ujR_3h9dKS6BqL0uLQ</string>
-    <string name="naver_client_secret">rHY3Txq9jr</string>
-    <string name="naver_client_name">LoginTest</string>
-</resources>
