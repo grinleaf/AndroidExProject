@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ex100AlternativeResources</string>
+
+    <string name="title">Hello</string>
+    <string name="message">Nice to meet you</string>
+
+
+</resources>

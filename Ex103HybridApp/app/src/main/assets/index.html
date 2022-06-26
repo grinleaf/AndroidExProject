@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <script>
+            //Native Android 에서 호출할 메소드
+            function setMessage(msg){
+                document.getElementById('msg').innerHTML= msg
+            }
+            //Native Android 에게 메시지를 보내는 작업 메소드
+            function sendMessageToNative(){
+                var msg= document.getElementById('in1').value
+
+                //* 안드로이드의 중개인 객체를 이용하여 원하는 작업 요청 <-- Kotlin 문서에서 미리 보낼 객체와 .addJavascriptInterface() 코드를 작성해둬야함
+                //--> 중개인 객체는 자동으로 BOM(Browser Object Model)의 최상위 객체인 window 의 멤버가 됨
+                window.Droid.setTextView(msg)
+            }
+
+            //디바이스 고유 기능 사용 메소드
+            function openGallery(){
+                window.Droid.openGalleryApp()
+            }
+        </script>
+    </head>
+    <body>
+        <h5>Native Android 로부터 받은 메세지</h5>
+        <h6 id="msg">waiting...</h6>
+
+        <h5 class="mt-5">Native Android 쪽으로 메세지 보내기</h5>
+        <input type="text" id="in1" placeholder="enter message" class="form-control mt-3">
+        <div class="d-grid gap-2">
+            <button onclick="sendMessageToNative()" class="btn btn-primary mt-3 btn-block">send message to Native Android</button>
+            <!-- 웹의 JS 문서에서 앱의 디바이스 고유 기능에 접근하기 -->
+            <button onclick="openGallery()" class="btn btn-warning">open gallery</button>
+        </div>
+    </body>
+</html>

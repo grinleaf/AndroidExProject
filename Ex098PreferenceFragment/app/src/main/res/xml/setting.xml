@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBoxPreference
+        app:key="message"
+        app:title="소리 알림"
+        app:summary="소리로 알림을 받으려면 체크하세요"
+        app:icon="@drawable/ic_baseline_notifications_24" />
+
+    <SwitchPreferenceCompat
+        app:key="vibration"
+        app:title="진동 알림"
+        app:summary="메시지가 왔을 때 진동으로 알림을 받으려면 켜세요"/>
+
+    <EditTextPreference
+        app:key="nickname"
+        app:title="닉네임"
+        app:summary="닉네임을 설정하세요"/>
+
+    <!-- ListPreference : 라디오 버튼 항목 -->
+    <ListPreference
+        app:key="sound"
+        app:title="알림음"
+        app:summary="알림음을 설정하세요"
+        app:entries="@array/sounds"
+        android:entryValues="@array/sounds"/>
+    <!-- entries : 다이얼로그에 보여지는 항목 글씨 / entryValues : 저장될 항목 값(변수명처럼) -->
+    <!-- MultiSelectListPreference : 체크박스 항목-->
+    <!-- 중복 항목 선택의 경우를 허용하지 않는 set 컬렉션 방식으로 저장됨! -->
+    <MultiSelectListPreference
+        app:key="favor"
+        app:title="Favorites"
+        app:summary="좋아하는 항목을 선택하세요"
+        app:entries="@array/favors"
+        android:entryValues="@array/favors"/>
+
+    <PreferenceCategory app:title="디버깅">
+        <SwitchPreferenceCompat
+            app:key="debugging"
+            app:title="USB 디버깅"
+            app:summary="USB가 연결된 경우 디버그 모드 사용"
+            android:defaultValue="true"/>
+        <SwitchPreferenceCompat
+            app:key="aaa"
+            app:title="aaa"
+            app:summary="aaa"
+            android:defaultValue="true"
+            app:dependency="debugging"/>
+        <CheckBoxPreference
+            app:key="usb_app"
+            app:title="USB로 설치된 앱 확인"
+            app:summary="USB 디버그를 통해 설치된 앱 목록 확인"
+            app:dependency="debugging"/>
+    </PreferenceCategory>
+
+    <!-- 계층구조 PreferenceFragment (중첩) -->
+    <!-- fragment 설정 시, 패키지명.클래스명 형태로 기입 -->
+    <Preference
+        app:fragment="com.grinleaf.ex098preferencefragment.SettingNetworkFragment"
+        app:key="network"
+        app:title="네트워크"
+        app:summary="네트워크를 설정합니다."/>
+
+    <PreferenceScreen app:title="이미지보기">
+
+        <intent android:targetPackage="com.grinleaf.ex098preferencefragment"
+            android:targetClass="com.grinleaf.ex098preferencefragment.ImageActivity"/>
+
+
+    </PreferenceScreen>
+
+
+
+</PreferenceScreen>

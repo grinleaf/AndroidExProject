@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="roaming"
+        app:title="데이터 로밍"
+        app:summaryOn="로밍이 되어있으므로 과금이 있습니다."
+        android:summaryOff="로밍 시에 로밍 서비스를 연결"
+        app:iconSpaceReserved="false"/>
+
+</PreferenceScreen>
