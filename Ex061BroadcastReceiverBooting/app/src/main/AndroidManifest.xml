@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grinleaf.ex061broadcastreceiverbooting">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex061BroadcastReceiverBooting">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <!-- 리시버 등록 -->
+    <!-- 부팅완료 방송을 듣기 위한 퍼미션 필요! (기존 퍼미션 받던 때와는 다르게, 2군데에서 작성 : 1) <uses-permission> - 앱전체 퍼미션  2) 리시버 속성으로 추가 - 리시버에만 퍼미션 -->
+        <receiver android:name=".BootingReceiver" android:exported="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+    <!--  리시버에 여러개의 액션도 등록 가능 -->
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <!-- 1. 익명 클래스로 리스너 처리하는 버튼 -->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to main"
+        android:layout_centerInParent="true"/>
+
+    <!-- 2. SAM 변환으로 클릭을 처리하는 버튼(=람다식과 유사) -->
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:backgroundTint="#FFFF0000"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

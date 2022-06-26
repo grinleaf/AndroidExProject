@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "793443552383",
+    "project_id": "ex091firebasechattinggrinleaf",
+    "storage_bucket": "ex091firebasechattinggrinleaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793443552383:android:b9b8da2384934cbf0cc34a",
+        "android_client_info": {
+          "package_name": "com.grinleaf.ex091firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793443552383-pv4dhsnq20i6t70opl12i3j9sfdqk7nr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaxBYI-8yhTNb-tsyz04awuLV_rgcOMI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793443552383-pv4dhsnq20i6t70opl12i3j9sfdqk7nr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

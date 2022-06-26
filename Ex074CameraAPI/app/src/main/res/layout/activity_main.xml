@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 3. 카메라 앱 실행 시 캡처 직전까지 화면을 보여주는 프리뷰 -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/pvv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 4. 화면 위에 떠있는 캡처 버튼(이미지뷰 기반) : extended 플로팅 액션버튼은 이미지와 글자가 같이 들어감 -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"/>
+
+    <!-- 8-4. 캡처된 이미지의 미리보기 보여주는 뷰 -->
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        android:padding="8dp"/>
+
+
+
+
+</RelativeLayout>

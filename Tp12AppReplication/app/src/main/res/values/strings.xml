@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tp12AppReplication</string>
+    <string-array name="toolbar_grid">
+        <item>프리미엄블랙</item>
+        <item>모텔</item>
+        <item>호텔</item>
+        <item>펜션 · 풀빌라</item>
+        <item>리조트</item>
+        <item>캠핑 · 글램핑</item>
+        <item>게하 · 한옥</item>
+        <item>반나절호캉스</item>
+        <item>공간대여</item>
+        <item>렌터카</item>
+        <item>레저 · 티켓</item>
+        <item>맛집</item>
+    </string-array>
+</resources>

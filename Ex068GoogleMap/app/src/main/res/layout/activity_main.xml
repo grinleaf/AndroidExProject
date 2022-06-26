@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- GoogleMap 은 지도뷰(MapView)를 직접 배치하지 않고, 지도뷰를 가진 프래그먼트를 배치하여 지도를 보여주는 방식 -->
+    <!-- 바로 <MapView> 하지 않고, <Fragment>에 name 속성으로 이미 만들어진 MapView 를 부여해주기 -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        map:uiZoomGestures="true"
+        map:uiScrollGestures="true"
+        map:mapType="normal"
+        map:cameraTargetLat="37.5608"
+        map:cameraTargetLng="127.0347"
+        map:cameraZoom="18"/>
+    <!-- *1-1. map: 쓰기 위해서 LinearLayout 속성에 map 추가해줘야함 (자동완성) -->
+    <!-- mapType : hybrid(위성, 이미지 혼합) / satellite(인공위성) 등 -->
+    <!-- cameraTargetLat : 위도 / cameraTargetLng : 경도 설정 -->
+
+    <!-- 개발자가 만든 프래그먼트 안에 Google 지도 프래그먼트를 놓아야할 때 -->
+    <fragment
+        android:id="@+id/frag_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:name="com.grinleaf.ex068googlemap.MyFragment"/>
+
+
+</LinearLayout>

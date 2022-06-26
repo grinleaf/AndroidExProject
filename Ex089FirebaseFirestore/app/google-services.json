@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "631091657927",
+    "project_id": "ex089firebasefirestoredbgrin",
+    "storage_bucket": "ex089firebasefirestoredbgrin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631091657927:android:945d338d9ef5a634e452e2",
+        "android_client_info": {
+          "package_name": "com.grinleaf.ex089firebasefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631091657927-fdkkfute9ardho4i9cg5b4qhul7s4kuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCarbL9fUMJofRO9YUq2bPEJuFUrHUaA-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631091657927-fdkkfute9ardho4i9cg5b4qhul7s4kuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
