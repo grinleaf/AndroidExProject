@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--AppBarLayout은 기본으로 배경색을 가지고 있음. -->
+
+        <!-- .java에서 이 툴바가 제목줄이라고 설정해야 함. -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            app:logo="@drawable/ic_action_logo"
+            app:titleMarginStart="32dp"
+            app:subtitle="This is sub title"
+            app:subtitleTextColor="#FFFFFF00"
+            app:title="AppBar"
+            android:theme="@style/MyToolbar"/>
+
+        <!-- 탭버튼은 자바에서 추가하도록 함.  -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="#FFFFFF00"
+            app:tabIndicatorColor="#FFFFFF00"
+            app:tabIndicatorHeight="4dp"
+            app:tabIndicatorFullWidth="true"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

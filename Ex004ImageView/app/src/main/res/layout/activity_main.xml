@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/flag_korea"
+        android:scaleType="centerInside"
+        android:background="@drawable/ic_launcher_background"
+        android:layout_marginBottom="16dp"
+        />
+
+<!-- ImageView 는 이미지가 원본 가로x세로 비율을 유지한 상태로 Layout 크기에 맞춰 줄어든다(자동 scaling). 이미지가 줄어들면서 빈공간 발생하면, -->
+<!-- 이를 예측하여 ImageView 에는 기본적으로 가운데 정렬이 적용되어있다. -->
+<!-- centerCrop 은 보통 목록에서 이미지 미리보기를 보여줄 때 사용하는 편 -->
+<!-- ImageView 의 background 는 스케일 x -->
+
+    <Button
+        android:id="@+id/btn_aus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="australia"/>
+
+    <Button
+        android:id="@+id/btn_bel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="belgium"/>
+
+    <Button
+        android:id="@+id/btn_can"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="canada"/>
+
+    <Button
+        android:id="@+id/btn_kor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="korea"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전"
+            android:layout_marginHorizontal="16dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"/>
+
+
+    </LinearLayout>>
+</LinearLayout>

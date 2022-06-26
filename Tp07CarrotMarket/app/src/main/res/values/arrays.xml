@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="dong">
+        <item>서초동</item>
+        <item>신사동</item>
+        <item>논현동</item>
+        <item>동선동</item>
+        <item>삼선동</item>
+        <item>미아동</item>
+        <item>돈암동</item>
+        <item>길음동</item>
+
+    </string-array>
+    
+    
+    
+</resources>

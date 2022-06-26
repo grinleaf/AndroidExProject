@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF00">
+
+<!-- 어차피 Fragment 의 id는 연결된 java 문서에서만 참조변수로 쓰이기 때문에,
+     MainActivity 에서 쓸 목적으로 지정한 activity_main.xml 의 id와 겹치는 이름을 사용해도 상관 없음!   -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView inside MyFragment"
+        android:textColor="#FF333333"
+        android:padding="8dp"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change text"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change text mainactivity"
+        android:backgroundTint="@color/black"/>
+
+</LinearLayout>

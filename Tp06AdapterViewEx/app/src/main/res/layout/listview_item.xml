@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/item_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/flag_korea"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#FF006600"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:id="@+id/item_tv_nation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NATION"
+            android:textSize="12dp"
+            android:textColor="#FF333333"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71520612531",
+    "project_id": "ex092fcmpushgrinleaf",
+    "storage_bucket": "ex092fcmpushgrinleaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71520612531:android:89629b70719d710e6c80c6",
+        "android_client_info": {
+          "package_name": "com.grinleaf.ex092firebasecloudmessagingpush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71520612531-d5g9a0lp4j66eb4acf52i2q0e37r3qqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBVAP7w0eTihupfaI_eB3aWQymcm0ViyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71520612531-d5g9a0lp4j66eb4acf52i2q0e37r3qqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

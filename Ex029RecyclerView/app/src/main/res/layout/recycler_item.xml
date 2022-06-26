@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardElevation="16dp"
+    app:contentPadding="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/white">
+
+    <!-- 카드뷰는 프레임뷰 기반으로 만들었기 때문에 자식뷰들이 겹침! 따로 마진 등을 줘야함 -->
+    <!-- 카드뷰는 기본적으로 카드형태이므로 외곽선을 가지며, 종이에서 카드를 띄우는 느낌으로(Elevation) 그림자 설정 -->
+    <!-- 구글에서 추천하는 Elavation 수치는 기본 4dp. padding 시 contentPadding 사용 권장 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textColor="#FF333333"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is message"
+            android:layout_below="@id/tv_name"
+            android:padding="4dp"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

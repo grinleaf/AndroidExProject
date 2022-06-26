@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "698289336910",
+    "project_id": "tp16logintestgrinleaf",
+    "storage_bucket": "tp16logintestgrinleaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698289336910:android:0544e123b02baa33c2091f",
+        "android_client_info": {
+          "package_name": "com.example.tp16logintest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698289336910-sr79k9qetnaafmf0uphigmh67bjd0mbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tp16logintest",
+            "certificate_hash": "0d5c49510f5c6346cd93495d457a8b3d5c5a8d3c"
+          }
+        },
+        {
+          "client_id": "698289336910-73iq8uv48o7v446rtpscmhfoafnr820e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnWzaOKcJtdPvV4zT4SZED1GwQtoEgoIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698289336910-73iq8uv48o7v446rtpscmhfoafnr820e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

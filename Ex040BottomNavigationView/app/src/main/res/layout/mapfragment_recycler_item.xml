@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardBackgroundColor="@color/purple_500">
+
+    <!-- 아이템 안에 뷰 모양은 각자 원하는 모양으로 뷰 배치 -->
+
+</com.google.android.material.card.MaterialCardView>

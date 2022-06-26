@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn01"/>
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn02"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn03"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn04"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn05"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn06"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn07"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn08"
+        android:layout_below="@id/b1"/>
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="btn09"
+        android:layout_toRightOf="@id/b3"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        android:layout_above="@id/b5"
+        android:layout_alignStart="@id/b5"/>
+
+    <!-- 뷰들을 겹쳐서 배치해야할 때, 후에 입력된 뷰가 위쪽으로 배치됨. 단, Button 뷰는 클릭기능 때문에 우선적으로 위쪽으로 배치된다. -->
+    <!-- **나중에만든 LinearLayout 안의 Button 뷰는 LinearLayout 바깥의 Button 뷰 아래에 깔림 주의! -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#ff0000">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaaaa"/>
+    </LinearLayout>
+
+</RelativeLayout>

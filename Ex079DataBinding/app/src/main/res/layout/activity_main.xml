@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 2-1. 데이터 바인딩은 root 요소로 layout 요소가 배치되어야 사용 가능. layout 은 뷰가 아님! -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+
+    <!-- 2-2. 뷰들과 연결될 데이터를 설정 -->
+    <data>
+        <!-- 2-6. 사용할 변수 데이터 설정-->
+        <variable
+            name="user"
+            type="com.grinleaf.ex079databinding.User" />
+
+    </data>
+    <!-- 2-3. 레이아웃 뷰 : 기존의 root 역할을 했던 뷰 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="@{user.name}"/>
+            <!-- 2-7. @{<data> 안에 설정한 데이터의 name 값으로 그 안의 옵저버블 변수 소환}-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="@{String.valueOf(user.age)}"/>
+            <!-- 2-8. @{int 자료형인 age 값을 스트링으로 변환}-->
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="change data by view binding"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="change data by data binding"
+            android:onClick="@{user::changeData}"/>
+            <!-- 2-12-b. data binding 설정이 되어있어야 onClick 속성 활성화됨 -->
+            <!-- 2-12-d. 옵저버블 변수를 가진 클래스의 멤버 메소드를 호출할 때, 클래스::메소드명 형식으로-->
+
+    </LinearLayout>
+
+</layout>

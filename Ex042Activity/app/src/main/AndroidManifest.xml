@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grinleaf.ex042activity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ex042Activity">
+
+        <!-- 자바 패키지에서 new Activity - Empty Activity 생성하여 자동으로 코드가 작성됨 -->
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false"
+            />
+
+<!--        <activity-->
+<!--            android:name=".ThirdActivity"-->
+<!--            android:exported="false"-->
+<!--            android:parentActivityName=".MainActivity"/>  MainActivity 를 부모 액티비티로 설정. 개발자들이 선호하지는 않는 방식-->
+
+        <!-- Second Activity : 새로운 액티비티를 작성했으면 요기에도 작성해서 알려야함~! -->
+        <!-- 나머지 4대 구성요소(Content)인 Service, BroadcastReceiver, ContentProvider 도 마찬가지! -->
+        <activity android:name=".SecondActivity" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

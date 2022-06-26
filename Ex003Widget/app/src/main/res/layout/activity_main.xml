@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+<!-- TextView 와 Button 추가하여 클릭이벤트 처리연습 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/tv" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:id="@+id/btn"/>
+
+<!-- 기본적으로 버튼은 text 가 전부 대문자, gravity 가 center 상태 -->
+<!-- textAllCaps : 전부 대문자 true/false 상태 선택 가능 -->
+<!-- ★★ id 식별자 : MainActivity 문서에서 참조변수가 View 들을 참조할 때 이용됨! ★★ -->
+
+<!-- 글씨를 입력받을 수 있는 View. input 타입을 지정할 수 있음(공란 탭하면 올라오는 키패드 종류 지정 가능). 줄바꿈 제어 가능 -->
+<!-- 한 줄 짜리 텍스트 입력받기 -->
+    ㅁ<EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="글씨를 입력하세요"
+        android:inputType="text"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼"
+        android:backgroundTint="#0088ff"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="RESULT"
+        android:textSize="32sp"
+        android:textColor="#444444"
+        android:gravity="center"/>
+
+
+</LinearLayout>

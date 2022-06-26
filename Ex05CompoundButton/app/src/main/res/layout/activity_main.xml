@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cb01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:checked="true"/>
+    <!-- CheckBox 는 애초에 사람 손으로 누르기 쉬운 형태로 만들어졌기 때문에 사이즈 조절은 하지 않고 wrap/wrap 으로 설정하는 것을 권장한다   -->
+    <CheckBox
+        android:id="@+id/cb02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banana"/>
+
+    <CheckBox
+        android:id="@+id/cb03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange"
+        android:/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold"/>
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="꺼짐"
+        android:textOn="켜짐"/>
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound"/>
+
+
+
+</LinearLayout>

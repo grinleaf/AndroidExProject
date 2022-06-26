@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ex002Practice</string>
+
+    <string name="receive_message">받은 메시지</string>
+</resources>

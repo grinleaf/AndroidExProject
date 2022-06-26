@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 콘텐츠 영역 : Fragment가 놓여질 뷰  -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <!-- 네비게이션의 선택에 따라 다른 색상이 보이도록   -->
+    <!-- res/color 폴더안에 selector로 Text Tint 색상 지정 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bnv"
+        app:itemTextColor="@color/bnv_item"
+        app:itemIconTint="@color/bnv_item"
+        app:itemIconSize="24dp"
+        app:labelVisibilityMode="selected"/>
+
+</LinearLayout>

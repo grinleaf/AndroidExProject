@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!-- ConstraintLayout 은 가로축(x축), 세로축(y축) 에 제약사항을 주는 것 ( 버튼의 상/하/좌/우를 부모/특정 뷰의 상/하/좌/우에 맞춰 정렬한다 )-->
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        app:layout_constraintLeft_toRightOf="@id/b1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp"/>
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintLeft_toRightOf="@id/b2"
+        app:layout_constraintTop_toBottomOf="@id/b2"/>
+
+    <!-- 정가운데 배치 -->
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello world"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+        <!-- 제약사항을 상충시키면 가운데로 정렬됨 -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"/>
+        <!-- bias 는 왼쪽 오른쪽에서 전부 당기는 제약조건이 있는 상황에 가중을 두어 위치를 조정하는 것! 20% 의 위치 -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 드롭박스 형태의 데이터 (선택형==변경이 없는 데이터 형태) -->
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/city"-->
+<!--        android:prompt="@string/spinner_prompt"/>-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/cardview_compat_inset_shadow"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_prompt"/>
+
+
+</RelativeLayout>

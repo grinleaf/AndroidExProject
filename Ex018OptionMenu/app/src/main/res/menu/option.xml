@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- item 은 갯수제한 없이 추가가 가능. title 필수 속성을 반드시 넣어줘야함-->
+    <!-- 오버플로우 메뉴 아래에 속하는 경우, 기본적으로 icon 속성이 적용되지 않음-->
+        <!-- showAsAction 속성의 default 값은 never. always 로 바꾸면, 바깥으로 아이콘 배치 가능 -->
+        <!-- 사실 always 는 아이콘이 너무 많으면 제목 영역을 건드리게 되므로 권장 x. ifroom 권장 = 공간이 있을 경우 -->
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_menu_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_add"
+        android:title="Add"
+        android:icon="@drawable/ic_menu_add"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_help"
+        android:title="Help"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

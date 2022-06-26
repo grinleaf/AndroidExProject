@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrofit Practice #1"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time"/>
+        <TextView
+            android:id="@+id/tv_so2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="so2"/>
+        <TextView
+            android:id="@+id/tv_minu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="minu"/>
+        <TextView
+            android:id="@+id/tv_oz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="oz"/>
+        <TextView
+            android:id="@+id/tv_no2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no2"/>
+        <TextView
+            android:id="@+id/tv_cmo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cmo"/>
+        <TextView
+            android:id="@+id/tv_ulfptc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ulfptc"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

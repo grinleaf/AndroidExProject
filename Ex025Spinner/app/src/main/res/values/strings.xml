@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex025Spinner</string>
+
+    <!-- 스피너의 다이얼로그모드 제목글씨 -->
+    <string name="spinner_prompt">도시선택</string>
+
+</resources>
